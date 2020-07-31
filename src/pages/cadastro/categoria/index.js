@@ -36,7 +36,8 @@ function CadastroCategoria() {
   useEffect(() => {
     // eslint-disable-next-line no-console
     console.log('[useEffect]');
-    const url = 'http://localhost:8080/categorias';
+    // const url = 'http://localhost:8080/categorias';
+    const url = 'https://parizottoflix.herokuapp.com/categorias';
     fetch(url)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
